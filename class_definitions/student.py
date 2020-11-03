@@ -10,6 +10,8 @@ class Student:
             raise ValueError
         if not self.first_name.isalpha():
             raise ValueError
+        if not self.major.isalpha():
+            raise ValueError
 
     def __str__(self):
         return self.last_name + ", " + self.first_name + " has major " + self.major + " with gpa: " + str(self.gpa)
