@@ -12,6 +12,7 @@ class MyTestCase(unittest.TestCase):
     def test_object_created_required_attributes(self):
         self.assertEqual(self.student.last_name, 'Reser')
         self.assertEqual(self.student.first_name, 'Jack')
+        self.assertEqual(self.student.major, 'CIS')
 
 
 if __name__ == '__main__':
