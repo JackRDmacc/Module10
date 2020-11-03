@@ -12,7 +12,7 @@ class Student:
             raise ValueError
         if not self.major.isalpha():
             raise ValueError
-        if not isinstance(self.gpa, float):
+        if not isinstance(self.gpa, float) or not (0.00 <= self.gpa <= 4.0):
             raise ValueError
 
     def __str__(self):
